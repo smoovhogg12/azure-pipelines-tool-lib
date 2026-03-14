@@ -11,7 +11,7 @@ extends:
   template: v1/1ES.Official.PipelineTemplate.yml@1ESPipelineTemplates
   parameters:
     featureFlags:
-      autoBaseline: false
+      autoBaseline: true
     sdl:
       baseline:
         baselineSet: default
@@ -64,4 +64,4 @@ extends:
         steps:
         - template: /.azure-pipelines/common-steps.yml@self
           parameters:
-            includePackaging: 'false'
+            includePackaging: 'true'
